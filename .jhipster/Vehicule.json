@@ -1,0 +1,42 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "commande",
+            "otherEntityName": "commande",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "vehicule"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "matricule",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Typevehicule",
+            "fieldValues": "VOITURE,CAMION,MOTOCYCLETTE,AUTOANIMAL,VAN",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "capacite",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20200531012820",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "vehicule",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": true,
+    "pagination": "pagination"
+}

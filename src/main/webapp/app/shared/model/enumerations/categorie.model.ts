@@ -1,0 +1,7 @@
+export const enum Categorie {
+  PERSONNE = 'PERSONNE',
+  ANIMAL = 'ANIMAL',
+  PANIERSMENAGER = 'PANIERSMENAGER',
+  REPAS = 'REPAS',
+  OBJET = 'OBJET'
+}

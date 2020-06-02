@@ -1,0 +1,12 @@
+{
+  "coviteApp": {
+    "Categorie": {
+      "null": "",
+      "PERSONNE": "PERSONNE",
+      "ANIMAL": "ANIMAL",
+      "PANIERSMENAGER": "PANIERSMENAGER",
+      "REPAS": "REPAS",
+      "OBJET": "OBJET"
+    }
+  }
+}

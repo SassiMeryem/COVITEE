@@ -1,0 +1,59 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "vehicule",
+            "otherEntityName": "vehicule",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "matricule",
+            "otherEntityRelationshipName": "commande"
+        },
+        {
+            "relationshipName": "position",
+            "otherEntityName": "position",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "commande"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "prix",
+            "fieldType": "Float",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Categorie",
+            "fieldValues": "PERSONNE,ANIMAL,PANIERSMENAGER,REPAS,OBJET",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "typeservice",
+            "fieldType": "Service",
+            "fieldValues": "TRANSPORT,LIVRAISON",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20200531002706",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "commande",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": true,
+    "pagination": "pagination"
+}
